@@ -1,0 +1,30 @@
+{
+  "name": "parcel-comp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel build app.js -d ./app/ -o app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turtle89431/mycomp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turtle89431/mycomp/issues"
+  },
+  "homepage": "https://github.com/turtle89431/mycomp#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.3"
+  }
+}
