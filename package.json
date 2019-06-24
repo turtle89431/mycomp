@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel build app.js -d ./app/ -o app.js"
+    "start":"yarn s1 && yarn s2",
+    "s1": "parcel build app.js -d ./app/ -o app.js",
+    "s2":".\\js++.exe"
   },
   "repository": {
     "type": "git",

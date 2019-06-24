@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-class HelloMessage extends React.Component {
+import {App} from "./reactComp"
+class Holder extends React.Component {
+ 
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return <App name={this.props.name} time={this.props.state.time} />;
   }
 }
 
+
 var mountNode = document.getElementById("app");
-ReactDOM.render(<HelloMessage name="Jane" />, mountNode);
+ReactDOM.render(<Holder name="Walter" state={{time:"no time"}}/>, mountNode);
+let i=0
+setInterval(()=>{
+  ReactDOM.render(<Holder name="Walter" state={{time:`${i++}`}}/>, mountNode);
+},1000)
